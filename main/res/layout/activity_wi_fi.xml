@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.demiurge.qrscannerd.WiFIActivity">
+
+
+    <LinearLayout
+        android:id="@+id/wifi_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/app_bar"
+            android:id="@+id/wifi_act_app_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </include>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/wifi_act_edittexts"
+        android:orientation="vertical"
+        android:layout_below="@+id/wifi_app_bar_layout"
+        android:layout_above="@+id/wifi_act_gen_but"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/wifi_act_ssis"
+            android:hint="Please input network name"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/wifi_act_password"
+            android:hint="Please input network password"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/wifi_act_check_hidden_wifi"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hidden SSID?" />
+
+        <RadioGroup
+            android:id="@+id/wifi_act_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <RadioButton
+                android:id="@+id/wifi_act_radioButton_wep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WEP" />
+
+            <RadioButton
+                android:id="@+id/wifi_act_radioButton_wpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WPA/WPA2" />
+
+            <RadioButton
+                android:id="@+id/wifi_act_radioButton_no_encryption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No encryption" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/wifi_act_gen_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="29dp"
+        android:text="Click here to generate"/>
+
+</RelativeLayout>

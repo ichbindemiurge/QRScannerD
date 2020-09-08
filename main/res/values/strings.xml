@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QRScannerD</string>
+    <string name="generate_name">Generate</string>
+    <string name="history_name">History</string>
+    <string name="about_name">About</string>
+    <string name="generate_links">Link</string>
+    <string name="generate_vCard">vCard</string>
+    <string name="subject_hint">Subject</string>
+    <string name="body_hint">Body</string>
+    <string name="to_who_hint">To</string>
+</resources>
