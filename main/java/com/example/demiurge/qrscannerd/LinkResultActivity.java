@@ -80,7 +80,7 @@ public class LinkResultActivity extends AppCompatActivity {
     }
 
 
-    //https://stackoverflow.com/questions/29629205/sharing-image-from-android-app
+    
     private void shareBitmapImage()
     {
         File filePath = new File(getOutputMediaFile().toString());
